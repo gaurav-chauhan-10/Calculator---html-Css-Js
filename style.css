@@ -1,0 +1,165 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #647299;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.calc p {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 2px solid black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 0.5em;
+    text-align:start;
+    border-radius: 0.5rem;
+}
+
+.box1 {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+#display {
+    width: 100%;
+    height: 4rem;
+    color: #ffff;
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: #181F32;
+    border: none;
+    border-radius: 0.5rem;
+    text-align: right;
+    padding: 0.5rem;
+}
+
+.box2 {
+    width: 100%;
+    max-width: 300px;
+    background-color: #252D44;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.innerbox, .innerbox-last {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innerbox button, .innerbox-last button {
+    height: 4rem;
+    border: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.innerbox button {
+    width: 22%;
+    background-color: #EAE3DB;
+}
+
+.innerbox-last button {
+    width: 48%;
+    background-color: #EAE3DB;
+    font-size: 1.2rem;
+}
+
+#del, #reset {
+    background-color: #647299;
+    color: white;
+    cursor: pointer;
+}
+
+#equal {
+    color: white;
+    background-color: #D13F30;
+}
+
+/* Media Queries for Tablets and Smaller Devices */
+@media (max-width: 768px) {
+    .calc p {
+        font-size: 1.2em;
+    }
+
+    #display {
+        font-size: 1.5rem;
+        height: 3.5rem;
+    }
+
+    .box2 {
+        max-width: 90vw;
+        padding: 0.5rem;
+    }
+
+    .innerbox button, .innerbox-last button {
+        height: 3.5rem;
+    }
+
+    .innerbox button {
+        width: 20%;
+    }
+
+    .innerbox-last button {
+        width: 45%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .calc p {
+        font-size: 1em;
+    }
+
+    #display {
+        font-size: 1.2rem;
+        height: 3rem;
+    }
+
+    .box2 {
+        max-width: 90vw;
+        padding: 0.5rem;
+    }
+
+    .innerbox button, .innerbox-last button {
+        height: 3rem;
+    }
+
+    .innerbox button {
+        width: 22%;
+    }
+
+    .innerbox-last button {
+        width: 48%;
+        font-size: 0.9rem;
+    }
+}
